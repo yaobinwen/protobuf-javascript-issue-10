@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package example;
+
+import "foo.proto";
+import "bar.proto";
+
+message project {
+    Foo foo = 1;
+    Bar bar = 2;
+}

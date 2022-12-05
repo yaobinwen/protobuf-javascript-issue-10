@@ -1,0 +1,12 @@
+{
+    "name": "protobuf-js-issue",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "google-protobuf": "^3.19.4"
+    },
+    "scripts": {
+        "start": "nodejs ./tests/test.js",
+        "proto": "protoc --proto_path=./protos/ --js_out=import_style=commonjs,binary:./protos/ protos/*.proto"
+    }
+}
